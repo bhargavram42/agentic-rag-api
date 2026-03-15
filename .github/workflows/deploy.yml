@@ -24,6 +24,6 @@ jobs:
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           application_name: agentic-rag-api
           environment_name: Agentic-rag-api-env
-          version_label: ${{ github.sha }}
-          region: ${{ secrets.AWS_REGION }}
+          version_label: ${{ github.run_id }}
+          region: ap-southeast-2
           deployment_package: deploy.zip
